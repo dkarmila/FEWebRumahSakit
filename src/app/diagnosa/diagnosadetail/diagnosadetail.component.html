@@ -1,0 +1,92 @@
+<div class="col-md-11">
+  <!-- Horizontal Form -->
+  <div class="box box-info">
+      <div class="box-header with-border">
+      <h3 class="box-title">Detail Diagnosa</h3>
+      </div>
+      <!-- /.box-header -->
+      <!-- form start -->
+      <form class="form-horizontal">
+      <div class="box-body">
+          <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Kode Diagnosa</label>
+
+          <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputEmail3" value="{{dataDetail.KdDiagnosa}}" >
+          </div>
+          </div>
+          <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Kode Pasien</label>
+
+          <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputPassword3" value="{{dataDetail.KdPasien}}">
+          </div>
+          </div>
+          <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">Kode Rumah Sakit</label>
+          
+          <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputPassword3" value="{{dataDetail.KdRumahSakit}}">
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">Kode Dokter</label>
+            
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputPassword3" value="{{dataDetail.KdDokter}}">
+            </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-2 control-label">Keterangan Diagnosa</label>
+              
+              <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPassword3" value="{{dataDetail.KetDiagnosa}}">
+              </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Kode Perawatan</label>
+                
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputPassword3" value="{{dataDetail.KdPerawatan}}">
+                </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-2 control-label">Tanggal Diagnosa Awal</label>
+                  
+                  <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputPassword3" value="{{dataDetail.TglDiagnosaAwal}}">
+                  </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Kode Perawat</label>
+                    
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" value="{{dataDetail.KdPerawat}}">
+                    </div>
+                    </div>
+      </div>
+      <!-- /.box-body -->
+      <div class="box-footer">
+          <button class="btn btn-info" type="submit" (click)="diagnosaBack()">Back</button>
+      </div>
+      <!-- /.box-footer -->
+      </form>
+  </div>
+
+<!-- <form class="form-horizontal">
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Kode Peserta</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3" value="{{dataDetail.KdPeserta}}" disabled>
+    </div>
+</div>
+<div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Kode Angkatan</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3" value="{{dataDetail.KdAngkatan}}" disabled>
+    </div>
+</div>
+<div>
+  <button class="btn btn-info" type="button" (click)="jejakPesertaBack()">Back</button>
+</div>
+</form> -->

@@ -1,0 +1,45 @@
+<!-- /.box -->
+<!-- general form elements disabled -->
+<div class="col-xs-11">
+  <div class="box box-warning">
+<div class="box-header with-border">
+  <h3 class="box-title">Add Ruang Inap</h3>
+</div>
+<!-- /.box-header -->
+<div class="box-body">
+  <form role="form" (ngSubmit)="postRuangInap(dataAdd)">
+  <!-- text input -->
+  <div class="form-group">
+      <label>Kode Ruang Inap</label>
+      <input [(ngModel)]="dataAdd.KdRuangInap" name="kodeRI" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+      <label>Nama Ruang Inap</label>
+      <input [(ngModel)]="dataAdd.NamaRuangInap" name="namaRI" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Jenis Ruang Inap</label>
+    <input [(ngModel)]="dataAdd.JnsRuangInap" name="jenisRI" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Harga Ruang Inap</label>
+    <input [(ngModel)]="dataAdd.HargaRuangInap" name="hargaRI" type="number" class="form-control">
+  </div>
+  <div class="box-footer">
+      <button type="submit" class="btn btn-default" (click)="ruanginapBack()">Cancel</button>
+      <button type="submit" class="btn btn-info pull-right">Add</button>       
+  </div>        
+</form>
+</div>
+<!-- /.box-body -->
+</div>
+</div>
+<script>
+$(function () {
+    //Initialize Select2 Elements
+  $(".select2").select2();
+  $('#datepicker').datepicker({
+      autoclose: true
+  });
+});
+</script>

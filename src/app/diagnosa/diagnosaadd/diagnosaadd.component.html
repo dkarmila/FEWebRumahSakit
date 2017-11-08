@@ -1,0 +1,66 @@
+<!-- /.box -->
+<!-- general form elements disabled -->
+<div class="col-xs-11">
+  <div class="box box-warning">
+<div class="box-header with-border">
+  <h3 class="box-title">Add Diagnosa</h3>
+</div>
+<!-- /.box-header -->
+<div class="box-body">
+  <form role="form" (ngSubmit)="postDiagnosa(dataAdd)">
+  <!-- text input -->
+  <div class="form-group">
+      <label>Kode Diagnosa</label>
+      <input [(ngModel)]="dataAdd.KdDiagnosa" name="kodeDiagnosa" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+      <label>Kode Pasien</label>
+      <input [(ngModel)]="dataAdd.KdPasien" name="kodePasien" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Kode Rumah Sakit</label>
+    <input [(ngModel)]="dataAdd.KdRumahSakit" name="kodeRS" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Kode Dokter</label>
+    <input [(ngModel)]="dataAdd.KdDokter" name="kodeDokter" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Keterangan Diagnosa</label>
+    <input [(ngModel)]="dataAdd.KetDiagnosa" name="ketDiagnosa" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Kode Perawatan</label>
+    <input [(ngModel)]="dataAdd.KdPerawatan" name="kodePerawatan" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+      <label>Tanggal Diagnosa Awal</label>
+      <div class="input-group date">
+          <div class="input-group-addon">
+          <i class="fa fa-calendar"></i>
+          </div>
+          <input [(ngModel)]="dataAdd.TglDiagnosaAwal" name="tanggal" type="text" class="form-control pull-right" id="datepicker">
+      </div>
+  </div>
+  <div class="form-group">
+      <label>Kode Perawat</label>
+      <input [(ngModel)]="dataAdd.KdPerawat" name="KdPerawat" type="text" class="form-control">
+  </div>
+  <div class="box-footer">
+      <button type="submit" class="btn btn-default" (click)="diagnosaBack()">Cancel</button>
+      <button type="submit" class="btn btn-info pull-right">Add</button>       
+  </div>        
+</form>
+</div>
+<!-- /.box-body -->
+</div>
+</div>
+<script>
+$(function () {
+    //Initialize Select2 Elements
+  $(".select2").select2();
+  $('#datepicker').datepicker({
+      autoclose: true
+  });
+});
+</script>
